@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons"); @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css"); @import url("https://fonts.googleapis.com/css?family=Sofia"); @import url("https://fonts.googleapis.com/css?family=Assistant"); @import url("https://fonts.googleapis.com/css?family=Aclonica"); @import url("https://fonts.googleapis.com/css?family=Cutive"); @import url("https://fonts.googleapis.com/css?family=Purple Purse"); 
+
+.container-fluid {
+    background: linear-gradient(to bottom right, #3a0155 0%, #030307 40%);
+    min-height: 100vh;
+    width: auto
+}
+
+.container-fluid .navbar-brand {
+    font-size: 1.5rem;
+    font-family: cursive;
+    color: rgba(83, 227, 247, 0.829);
+    text-shadow: 4px 0px 0.5px rgb(7, 5, 5);
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #6d0b9b
+}
+
+.btn:hover {
+    color: #6d0b9b
+}
+
+.table , table a {
+    align-items: center;
+    width: 26vw;
+    justify-items: center;
+    color: azure;
+}
+
+table a:hover {
+    color: #6d0b9b
+}
+
+.table i {
+    color: #6d0b9b
+}
+
+.sm {
+    font-size: 0.8rem;
+}
+
+.justify-content-end .nav-item , .my-2 {
+    color: azure;
+}
+
+.my-2 :hover {
+    color: #6d0b9b
+}
+
+.d-inline-block {
+    border-radius: 50%;
+    border: 5px thin rgb(3, 26, 26);
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center
+}
+
+.btn {
+    color: azure;
+    font-family: 'Cutive';
+    background-color: transparent;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    color: rgb(94, 212, 241);
+    font-size: 0.7rem;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.btn:hover .tooltiptext {
+    visibility: visible;
+}
+
+.logoutbtn:hover .tooltiptext {
+    visibility: visible;
+}
+
+.modal-title {
+    color: rgb(11, 11, 29);
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    background-color: rgb(86, 90, 89);
+}
+
+.btn-primary {
+    background-color: rgb(111, 180, 157);
+}
+
+.btn-primary , .btn-secondary {
+    font-size: 0.5rem;
+    font-family: Helvetica;
+}
+
+.form-control {
+    background-color: rgba(78, 76, 76, 0.842);
+    font-family: 'Lucida Sans Regular', Geneva;
+    border-color: rgba(49, 47, 47, 0.842);
+    color: azure;
+}
+
+.card-deck , .list-group , .list-group-flush , .list-group-item {
+    background-color: transparent;
+    border: unset;
+    font-size: 1rem;
+}
+
+.list-group-item {
+    color: azure;
+    font-family: 'Trebuchet MS', sans-serif
+}
+
+.list-group-item:hover {
+    color: #6d0b9b
+}
+
+.card {
+    background-color: black;
+    width: 90vw;
+    border-radius: 10px;
+    height: auto;
+}
+
+.deckcard {
+    height: fit-content;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: azure;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-shadow: 0px 1px 1px snow;
+}
+
+.card-header {
+    color: azure;
+    font-family: 'Purple Purse';
+    font-size: 2rem;
+}
+
+.card-img-top {
+    border-radius: 10px;
+    width: 27vw;
+}
+
+.listofuser {
+    height: 70vh;
+    width: 80vw;
+    max-height: calc(50% - 15px);
+    overflow-y: auto;
+}
+
+.carousel-caption {
+    color: rgb(3, 95, 95);
+}
+
+.carousel ,.d-block {
+    width: 93vw;
+    height: 70vh;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+
+.card-title , .deckheader {
+    font-family: 'Gill Sans MT', sans-serif;
+    color: rgb(236, 250, 250);
+    text-shadow: 1px 1px 0px teal;
+    background: linear-gradient(to bottom right, #33004b 0%, #030307 77%);
+    border-radius: inherit;
+    font-size: 1.3rem;
+}
+
+
+@media screen and (min-width: 618px) and (max-width: 718px) {
+    .card-deck , .list-group , .list-group-flush , .list-group-item {
+        font-size:0.8rem;
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 617px) {
+    .card-deck , .list-group , .list-group-flush , .list-group-item {
+        font-size:0.7rem;
+    }
+
+    .form-control {
+        font-size: 0.6rem;
+        width: 16vw;
+    }
+}
+
+@media screen and (min-width: 476px) and (max-width: 499px) {
+    .card-deck , .list-group , .list-group-flush , .list-group-item {
+        font-size:0.8rem;
+    }
+
+    .form-control {
+        font-size: 0.6rem;
+        width: 16vw;
+    }
+}
+
+@media screen and (min-width: 445px) and (max-width: 475px) {
+    .card-deck , .list-group , .list-group-flush , .list-group-item {
+        font-size:0.7rem;
+    }
+
+    .form-control {
+        font-size: 0.6rem;
+    }
+
+    .card-header {
+        font-size: 0.8rem;
+    }
+
+    .display-4 {
+        font-size: 1.3rem;
+    }
+
+    .container-fluid .navbar-brand {
+        font-size: 0.7rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .modal-title {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 444px) {
+    .card-deck , .list-group , .list-group-flush , .list-group-item {
+        font-size:0.7rem;
+    }
+
+    .form-control {
+        font-size: 0.6rem;
+        width: 35vw;
+    }
+
+    .card-header {
+        font-size: 0.7rem;
+    }
+
+    .display-4 {
+        font-size: 1rem;
+    }
+
+    .container-fluid .navbar-brand {
+        font-size: 0.6rem;
+    }
+
+    .card-text {
+        font-size: 0.6rem;
+    }
+
+    .card-title , .deckheader {
+        font-size: 0.8rem;
+    }
+
+    .modal-title {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+    .card-deck , .list-group , .list-group-flush , .list-group-item {
+        font-size:0.7rem;
+    }
+
+    .form-control {
+        font-size: 0.6rem;
+        width: 34vw;
+    }
+
+    .card-header {
+        font-size: 0.7rem;
+    }
+
+    .display-4 {
+        font-size: 0.8rem;
+    }
+
+    .container-fluid .navbar-brand {
+        font-size: 0.6rem;
+    }
+
+    .card-text {
+        font-size: 0.6rem;
+    }
+
+    .card-title , .deckheader {
+        font-size: 0.7rem;
+    }
+
+    .modal-title {
+        font-size: 0.5rem;
+    }
+
+}

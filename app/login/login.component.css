@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons"); @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css"); @import url("https://fonts.googleapis.com/css?family=Sofia"); @import url("https://fonts.googleapis.com/css?family=Assistant"); @import url("https://fonts.googleapis.com/css?family=Aclonica"); 
+
+.container-fluid {
+    background: linear-gradient(to bottom right, #1c19dd 0%, #030307 77%);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container-fluid .navbar-brand {
+    font-size: 1.5rem;
+    font-family: cursive;
+    color: rgba(83, 227, 247, 0.829);
+    text-shadow: 4px 0px 0.5px rgb(7, 5, 5);
+}
+
+.container-fluid .navbar-brand .d-inline-block {
+    border-radius: 20%;
+    border: 5px thin rgb(3, 26, 26);
+}
+
+.container-fluid .parent {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.container-fluid .parent .leftdiv {
+    position: relative;
+    background: transparent;
+    width: auto;
+    height: auto;
+    align-self: flex-start;
+    margin-left: 1em;
+    margin-top: 2em;
+    opacity: 0.95;
+    filter: alpha(opacity=80);
+}
+
+.modal-title {
+    color: rgb(11, 11, 29);
+    font-family: cursive;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    background-color: rgb(86, 90, 89);
+}
+
+.btn-primary {
+    background-color: rgb(111, 180, 157);
+}
+
+.btn-primary , .btn-secondary {
+    font-size: 0.5rem;
+    font-family: Helvetica;
+}
+
+.container-fluid .parent .leftdiv .lead {
+    color: rgb(241, 204, 217);
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: 'Aclonica';
+}
+
+.container-fluid .parent .box-design {
+    position: relative;
+    background: linear-gradient(to bottom, #00ffff 0%, #000066 100%);
+    border-radius: 3em;
+    width: auto;
+    height: auto;
+    align-self: flex-start;
+    margin-top: 1em;
+    margin-left: 18em;
+    padding: 2.2em;
+    text-align: center;
+    opacity: 1;
+    filter: alpha(opacity=80);
+}
+
+.fas {
+    font-size: 7x;
+    color: rgb(146, 66, 66);
+}
+
+.container-fluid .parent .box-design .headerform {
+    color: rgb(20, 18, 19);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 0px 1px rgb(234, 238, 243);
+}
+
+.container-fluid .parent .box-design .tokeninput {
+    color: rgb(161, 236, 138);
+    font-size: 1rem;
+    background-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(12, 11, 12);
+    border-width: 2px;
+    width: 20vw;
+    border-radius: 4px;
+}
+
+.container-fluid .parent .box-design .tokeninput :hover {
+    box-shadow: 2px 1px 0 1px rgb(241, 242, 243);
+}
+
+.container-fluid .parent .box-design .btn {
+    border-radius: 10px;
+}
+
+.fa-sign-in-alt {
+    size: 9ex
+}
+
+.container-fluid .parent .box-design .links {
+    color: rgb(8, 10, 10);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+}
+
+.container-fluid .parent .box-design .links:hover {
+    color: rgb(84, 233, 233);
+    text-decoration-line: none;
+    font-weight: 700;
+}
+
+.container-fluid .parent .box-design .textnote {
+    font-family: 'Helvetica Neue' ,sans-serif;
+    color: rgb(12, 9, 9);
+}
+
+@media screen and (min-width: 680px) and (max-width: 730px) {
+    .container-fluid .parent .leftdiv .lead {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 679px) {
+    .container-fluid .parent .leftdiv .lead {
+        font-size: 0.6rem;
+    }
+
+    .container-fluid .parent .box-design {
+        margin-left: 8em;
+    }
+
+    .container-fluid .parent .box-design .links {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 599px) {
+    .container-fluid .parent .leftdiv .lead {
+        font-size: 0.99rem;
+    }
+
+    .container-fluid .parent .box-design {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+    .container-fluid .parent {
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+    .container-fluid .parent .leftdiv .lead {
+        font-size: 0.7rem;
+    }
+
+    .container-fluid .parent .box-design {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+    .container-fluid .parent {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .modal-title {
+        font-size: 0.7rem;
+    }
+}

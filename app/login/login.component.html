@@ -1,0 +1,67 @@
+<div class="container-fluid">
+
+  <a class="navbar-brand" href="" title="GIT-APP">
+    <img src="../assets/githeader.jpg" width="50" height="40" class="d-inline-block align-top" alt=""> GIT-APPLICATION
+  </a>
+
+  <br/>
+  <div class="parent">
+    <div class=" text-center box-design" style="order: 2;">
+      <img src="../assets/github.png" alt="GitHub" style="height: 30%; width: 40%">
+      <h1 class="headerform">SIGNIN</h1>
+      <!-- Form -->
+      <form>
+        <input (change)="hidetextevent(inputval.value)" #inputval type="password" class="tokeninput" placeholder="Enter Token....">
+        <br/>
+        <small *ngIf="hidetext" class="textnote">Enter GITHUB token</small>
+        <br/>
+        <button type="button" (click)="checkuser(inputval.value)" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">login</button>
+        <br/>
+        <br/>
+      </form>
+      
+      <a class="links" href="https://github.com/settings/tokens" target="blank">Create Token</a>
+      <br/>
+      <p>
+        <a class="links" href="https://github.com/join?source=experiment-header-dropdowns-home" target="blank">New to Github? Register</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal box for log-out -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+      <div *ngIf="incorrectuser" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">You are UNAUTHORIZED user
+            <i class="fas fa-exclamation-triangle"></i>
+            <br/> Please Create Token from the below link.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+
+      <div *ngIf="correctuser" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Is this You
+            <i class="fas fa-question"></i> : "{{details.login}}"
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" (click)="wronguser(u=details.login)" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button type="button" (click)="gotohome()" class="btn btn-primary">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+</div>

@@ -1,0 +1,63 @@
+<div class="container-fluid">
+    <nav class="navbar">
+        <!--logo -->
+        <a class="navbar-brand sticky-top" href="" title="GIT-APPLICATION">
+            <img src="assets/github.png" width="50" height="40" class="d-inline-block align-top" alt="Error"> GITAPP
+        </a>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <!--  currenct authorized user -->
+                <a class="nav-link logoutbtn" style="font-family:'Lucida Sans Regular' ,Geneva" routerLink="/home" title="me">
+                    <i class="fas fa-user-circle"></i>
+                    <span class="tooltiptext">My Profile</span>
+                </a>
+            </li>
+            <!-- log out button -->
+            <li class="nav-item">
+                <a class="nav-link logoutbtn" style="font-family:'Lucida Sans Regular' ,Geneva" data-toggle="modal" data-target="#lgmodal"
+                    title="SIGNOUT">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="tooltiptext">LogOut</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <br/>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Any idea to fix this error??</strong>Go previos page !!
+        <a class="btn btn-success" (click)="goback()" role="button">Ok</a>
+    </div>
+    <br/>
+
+    <!-- logout modal -->
+    <div class="modal fade" id="lgmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure want to sign out??</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" (click)="logout()" data-dismiss="modal" class="btn btn-primary">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="card bg-dark ">
+        <img class="card-img" src="../assets/images.jpg" alt="Card image">
+        <div class="card-img-overlay">
+            <h5 class="card-title">
+                <i class="far fa-sad-tear"></i>{{statusres}}&nbsp;&nbsp;{{statusttl}}
+                <i class="far fa-sad-tear"></i>
+            </h5>
+            <p class="card-text">{{statustring}}</p>
+        </div>
+    </div>
+    <br/>
+</div>
